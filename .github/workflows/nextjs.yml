@@ -22,6 +22,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Replace GITHUB_TOKEN with your personal access token secret name
           BRANCH: gh-pages
           FOLDER: .next
